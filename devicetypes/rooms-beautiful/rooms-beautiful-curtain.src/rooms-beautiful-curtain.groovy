@@ -16,7 +16,7 @@ import groovy.json.JsonOutput
 import physicalgraph.zigbee.zcl.DataType
 
 metadata {
-    definition(name: "Rooms Beautiful Curtain", namespace: "Rooms Beautiful", author: "Alex Feng", ocfDeviceType: "oic.d.blind", mnmn: "SmartThings", vid: "generic-shade-4") {
+    definition(name: "Rooms Beautiful Curtain", namespace: "Rooms Beautiful", author: "Alex Feng", ocfDeviceType: "oic.d.blind", mnmn: "SmartThings", vid: "generic-shade-2") {
         capability "Actuator"
         capability "Battery"
         capability "Configuration"
@@ -31,7 +31,7 @@ metadata {
 
         command "cont"
 
-        fingerprint profileId: "0104", inClusters: "0000, 0001, 0003, 0006, FC00, DC00, 0102", deviceJoinName: "Curtain", manufacturer: "Rooms Beautiful", model: "C001"
+        fingerprint profileId: "0104", inClusters: "0000, 0001, 0003, 0006, FC00, DC00, 0102", deviceJoinName: "Rooms Beautiful Window Treatment", manufacturer: "Rooms Beautiful", model: "C001" //Curtain
     }
 
     preferences {
